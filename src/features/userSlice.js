@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // const url = `https://ecommerce-backend-1z4o.onrender.com/api`;
-const url = `http://localhost:3200/api`;
+const url = `https://companieslisting-b.onrender.com/api`;
 
 
 
@@ -35,6 +35,7 @@ export const signupUser = createAsyncThunk('auth/signupUser', async (userInfo, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                // Authorization: `Bearer ${token}`,
             },
             body: JSON.stringify(userInfo),
         });

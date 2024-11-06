@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-let url = `http://localhost:3200/api`;
+let url = `https://companieslisting-b.onrender.com/api`;
 
 const initialState = {
     companyList: [],
