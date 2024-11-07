@@ -4,17 +4,17 @@ import { BrowserRouter as Router, Route, Routes, useLocation, Link } from "react
 import './App.css';
 
 // antd design components
-import { Button } from 'antd';
-import { CompanyList } from './components/CompanyList.js';
-import { CompanyListFilter } from './molecules/companyListFilter.js';
-import CompanyForm from './components/Admin/adminComponents/CompanyForm.js';
+// import { Button } from 'antd';
+// import { CompanyList } from './components/CompanyList.js';
+// import { CompanyListFilter } from './molecules/companyListFilter.js';
+// import CompanyForm from './components/Admin/adminComponents/CompanyForm.js';
 import { Home } from './components/Admin/adminComponents/Home.js';
 import { Company } from './components/Company.js';
 import Navbar from './molecules/Navbar.js';
 import Login from './components/user/Login.js';
 import Signup from './components/user/Signup.js';
-import { useDispatch } from 'react-redux';
-import { getCurrentUser } from './features/userSlice.js';
+// import { useDispatch } from 'react-redux';
+// import { getCurrentUser } from './features/userSlice.js';
 // import Navbar from './components/Admin/adminMolecules/Navbar.js';
 
 

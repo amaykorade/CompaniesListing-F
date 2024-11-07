@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
 import { Avatar, Button, Space, Table, Tag } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+// import { UserOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAsyncCompList, getAllCompList } from '../features/companyListSlice';
-import { render } from 'less';
-import { CompanyListFilter } from '../molecules/companyListFilter';
+// import { render } from 'less';
+// import { CompanyListFilter } from '../molecules/companyListFilter';
 
 const columns = [
     {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../adminMolecules/Navbar.js'
+// import Navbar from '../adminMolecules/Navbar.js'
 import CompanyForm from './CompanyForm.js'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectCurrentUser } from '../../../features/userSlice.js'
