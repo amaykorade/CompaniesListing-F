@@ -28,8 +28,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "postinstall": "npm install craco-less",
     "start": "craco start",
-    "build": "./node_modules/.bin/craco build",
+    "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
