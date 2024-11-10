@@ -137,11 +137,23 @@ export const CompanyList = () => {
     const paginatedCompanies = companyList.slice(0, currentPage * pageSize);
 
     if (status === 'loading') {
-        return <p>Loading companies...</p>;
+        return <p
+            style={{
+                textAlign: 'center',
+                marginTop: '100px',
+                fontSize: '1rem'
+            }}
+        >Loading companies...</p>;
     }
 
     if (status === 'failed') {
-        return <p>Error loading companies</p>;
+        return <p
+            style={{
+                textAlign: 'center',
+                marginTop: '100px',
+                fontSize: '3rem'
+            }}
+        >Login to get the list </p>;
     }
 
     if (!companyList || companyList.length === 0) {

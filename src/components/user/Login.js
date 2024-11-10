@@ -36,7 +36,7 @@ const Login = () => {
     return (
         <SignInStyled>
             <div className='login'>
-                <p>You would have received a email for conformation, after conforming try to login</p>
+                <p className='msg' >You would have received a email for conformation, after conforming try to login</p>
                 <h2>Login</h2>
                 <form onSubmit={handleSubmit}>
                     <div>

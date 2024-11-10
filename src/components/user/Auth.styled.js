@@ -83,6 +83,12 @@ export const SignInStyled = styled.div`
     margin: 150px 0 0 0;
 }
 
+.login .msg{
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 h2{
     font-size: 1.5rem;
     font-weight: 400;
