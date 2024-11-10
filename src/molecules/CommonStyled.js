@@ -5,7 +5,7 @@ export const NavbarStyled = styled.div`
 .nav{
     border: 1px solid black;
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     background-color: rgb(0,12,23);
@@ -26,7 +26,7 @@ export const NavbarStyled = styled.div`
     width: 20%;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: -5px;
 }
 .left a{
     color: white;
