@@ -46,7 +46,7 @@ const CompanyForm = () => {
         const lowerCaseName = companyName.toLowerCase();
         setLoading(true);
         try {
-            const response = await fetch(`http://localhost:3200/api/company/check?name=${lowerCaseName}`, {
+            const response = await fetch(`https://companieslisting-b.onrender.com/api/company/check?name=${lowerCaseName}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
