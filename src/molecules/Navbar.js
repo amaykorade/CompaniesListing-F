@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className='navbar'>
                     <div className='left logo'>
                         <Link to='/'>
-                            <img src='/compyeLogo.png' alt='Compye Logo' style={{ height: '60px', width: 'auto' }} />
+                            <img src='/compyeLogoOg.png' alt='Compye Logo' style={{ height: '55px', width: 'auto' }} />
                         </Link>
                     </div>
                     <div className='mid links'></div>
