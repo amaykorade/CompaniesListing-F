@@ -47,14 +47,14 @@ const Navbar = () => {
                             <>
                                 <span>{currentUser.user.name}</span> {/* Display current user's name */}
                                 <button onClick={handleLogout}>Logout</button>
-                                <Link to='/admin'> <p>admin</p> </Link>
-
+                                {currentUser.user.isAdmin && (
+                                    <Link to='/admin'> <p>admin</p> </Link>
+                                )}
                             </>
                         ) : (
                             <>
                                 <Link to='/signup'> <p>Signup</p> </Link>
                                 <Link to='/login'> <p>Login</p> </Link>
-                                <Link to='/admin'> <p>admin</p> </Link>
                             </>
                         )}
 
@@ -68,10 +68,14 @@ const Navbar = () => {
             </div>
             {isHamburgerOpen && (
                 <div className='nav-links'>
-                    <p> <Link to={`/signup`}>Signup</Link> </p>
-                    <p> <Link to={`/login`}>Login</Link> </p>
-                    <p> <Link to={`/admin`}>Admin</Link> </p>
-
+                    {currentUser && currentUser.user && currentUser.user.isAdmin ? (
+                        <Link to='/admin'> <p>admin</p> </Link>
+                    ) : (
+                        <>
+                            <Link to='/signup'> <p>Signup</p> </Link>
+                            <Link to='/login'> <p>Login</p> </Link>
+                        </>
+                    )}
                 </div>
             )}
         </NavbarStyled>
