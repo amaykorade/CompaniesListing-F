@@ -15,7 +15,7 @@ const columns = [
         render: (link) => (
             <img
                 src={`https://logo.clearbit.com/${new URL(link).hostname}`}
-                onError={(e) => { e.target.onerror = null; e.target.src = '/path/to/fallback-avatar.png'; }}
+                onError={(e) => { e.target.onerror = null; e.target.src = 'fallback-avatar.png'; }}
                 alt="Company Logo"
                 style={{ width: 30, height: 30, borderRadius: '50%' }}
             />

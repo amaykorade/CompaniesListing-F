@@ -19,7 +19,8 @@ export const addCompany = createAsyncThunk(
             });
 
             if (!response.ok) {
-                throw new Error('Failed to add company');
+                const errorDetails = await response.json();
+                throw new Error(errorDetails.message || 'Failed to add company');
             }
 
             return await response.json(); // Return the response
